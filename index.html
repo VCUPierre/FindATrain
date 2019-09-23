@@ -9,16 +9,62 @@
     <title>TrainTime</title>
 </head>
 <body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Find A Train</h1>
+            <p class="lead">A Great Tool</p>
+        </div>
+        <div class="text-center">
+            <p>Current Train Schedule</p>
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Train Name</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Frequency</th>
+                    <th scope="col">Next Arrival</th>
+                    <th scope="col">Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
 
-
-
-
+                </tbody>
+              </table>
+        </div>
+        <div class="border border-success">
+            <h4>Add Train</h4>
+            <form class="p-4">
+            <div class="form-group">
+              <label for="Input1">Train Name</label>
+              <input type="text" class="form-control" id="Input1">
+            </div>
+            <div class="form-group">
+                <label for="Input2">Destination</label>
+                <input type="text" class="form-control" id="Input2">
+            </div>
+            <div class="form-group">
+                <label for="Input3">First Train Time (Military Time)</label>
+                <input type="text" class="form-control" id="Input3">
+            </div>
+            <div class="form-group">
+                <label for="Input4">Frequency</label>
+                <input type="text" class="form-control" id="Input4">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        </div>
+        <div>
+        </div>
+    </div>
 
 <script
-src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-crossorigin="anonymous">
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
 </script>
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>
